@@ -1,0 +1,203 @@
+
+// estilo del contenido en general (tipografias, colores de texto, etc.)
+
+html {
+    scroll-behavior: smooth;
+    font-size: calc(12px + 0.390625vw);
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    text-decoration: none;
+    border: none;
+    font-family: unset;
+    color: unset;
+    width: fit-content;
+    text-align: center;
+}
+
+button {
+    color: #ffffff;
+    border-style: solid $red;
+}
+
+section {
+    min-height: 100%;
+    max-width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff;
+    background-color: $black;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    height: 100%;
+    width: 100%;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+}
+
+.underline, .underline:hover {
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.button {
+    padding: 0.6em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    background-color: $red;
+    border-radius: 0.4em;
+    transition: 0.4s;
+    text-align: center;
+
+}
+
+.semic {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.nocond {
+    font-family: 'Barlow','sans serif';
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .button:hover {
+        background-color: #ff4775;
+        transition: 0.4s;
+    }
+}
+
+.button:active {
+    background-color: #ff4775;
+    transition: 0.4s;
+}
+
+
+.container {
+    background: scroll no-repeat 50%;
+    background-size: cover;
+}
+
+.scrollIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    padding-bottom: 20px;
+    grid-column: 2/3;
+    transition: 0.1s;
+    p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    img {
+        height: 26px;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .scrollIcon:hover {
+        transform: translate(0px,-4px);
+        transition: 0.4s;
+    } 
+}
+
+
+/* selector de colores (aplicar una clase al texto deseado en html) */
+.colorRed {
+    color: $red;
+}
+
+.colorBlack {
+    color: $black;
+}
+
+.colorGray {
+    color: $gray;
+}
+
+.colorYellow {
+    color: $yellow;
+}
+
+.hiliteW {
+    background-color: $white;
+}
+
+.hiliteR {
+    background-color: $red;
+}
+
+.hiliteB {
+    background-color: $black;
+}
+/* fin */
+
+.parallax-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+
+.parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("/trianglify.png");
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+}
+
+.regular-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    background-image: url("/trianglify2.png");
+    z-index: 2;
+    position: relative;
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+    background: #aaa;
+}
