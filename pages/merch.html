@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- SEO -->
-	<meta name="description" content="Contactate con Oktopus. Enviale un mensaje.">
-	<meta name="keywords" content="oktopus, octavio, ochoa, contacto, enviar, mensaje">
-    <title>Contacto | Oktopus, Sitio Oficial</title>
+	<meta name="description" content="Todos el merchandising oficial de Oktopus.">
+	<meta name="keywords" content="oktopus, octavio, ochoa, remeras, gorras, buzos">
+	<title>Merch | Oktopus, Sitio Oficial</title>
 	<link rel="Icon" href="../assets/img/favicon.png">
 	
 	<!-- tipografias -->
@@ -19,11 +19,11 @@
 	
 	<!-- estilo -->
 	<link rel="stylesheet" href="../css/main.css">
-</head>
+	</head>
 
-<body class="contact">
-	
-        <!-- menu de navegacion -->
+<body class="lanzamientos">
+    
+	    <!-- menu de navegacion -->
 	<header class="headerMain">
 		<nav>
 			<img class="logoSm" src="../assets/img/logo-okt-b.svg" alt="OKTOPUS">
@@ -34,49 +34,63 @@
 				<li class="menuItem colorBlack"><a href="tour.html" class="noS">TOUR</a></li>
 				<li class="menuItem colorBlack"><a href="bio.html" class="noS">BIO</a></li>
 				<li class="menuItem colorBlack"><a href="lanzamientos.html" class="noS">LANZAMIENTOS</a></li>
-				<li class="menuItem colorBlack"><a href="merch.html" class="noS">MERCH</a></li>
-				<li class="menuItem colorBlack selected"><a href="#">CONTACTO</a></li>
+                <li class="menuItem colorBlack selected"><a href="#">MERCH</a></li>
+				<li class="menuItem colorBlack"><a href="contacto.html" class="noS">CONTACTO</a></li>
 			</ul>  
 		</nav>
 	</header>
 
-	<!-- formulario -->
-	<section class="sec1Contact">
+	<!-- ultimo lanzamiento -->
+
+	<section class="sec1Lanz">
+		
+		<div class="sixtypx"></div>
+
+		<div class="gridSec1Lanz">
+			<div>
+				<h2 class="raleway colorRed">OKTOPUS MERCHANDISING</h2>
+				<a class="button nocond" href="#">BOTÓN QUE NO HACE NADA!</a>
+			</div>
+		</div>
+
+		<div class="grayBack">
+			<h1 class="raleway"><a href="#todos" >Todos los productos de Oktopus</a></h1>
+		</div>
+
+
+	</section>
+
+	
+
+	<!-- grid con discos separados por año -->
+
+	<section class="sec2Lanz">
 
 		<div class="whiteBack"></div>
 
-		<h1 class="raleway colorBlack">Contacto</h1>
 
-		<article class="gridForm">
-			<div class="fotitoCont"></div>
+		<div class="space"></div>
+		<div class="space" id="todos"></div>
 
-			<form class="form">
+		<div class="flexSec2Lanz">
 
-				<div class="flexForm1">
-					<input class="completar" type="text" placeholder="Nombre y Apellido*" name="name" required>
-					<input class="completar" type="email" placeholder="Correo electrónico*" name="email" required>
-					<input class="completar" type="text" placeholder="Asunto*" name="subject" required>
-					<textarea class="mensaje" placeholder="Escribir mensaje*"></textarea>
-					<div>
-						<p>Soy</p>
-						<select name="type" required> 
-							<option value="fan">Fan</option>
-							<option value="producer">Productor/a</option>
-							<option value="label">Un Sello Discográfico</option>
-						</select>
-					</div>
-					<div>Acepto entregar mi alma a Ned Flanders*
-					<input type="checkbox" name="acepta" value="1" required></div>
-					<br>
-				</div>
-				<div class="botones">
-					<input class="button" type="submit" value="Enviar">
-					<input class="button" type="reset" value="Borrar todo">
-				</div>
+			<!-- caja de items -->
+			<div class="relBox" id="productos">
 				
-			</form>
+				<h2>Productos</h2>
 
-		</article>
+				<div class="gridRelBox" id="padre">
+
+					<!-- <div class="relItem">
+						<a href="#" target="blank"><img src="../assets/img/merch/remera1.jpg" alt="item"></a>
+						<p>AL CARRITO</p>
+					</div> -->
+
+				</div>
+
+			</div>
+
+		</div>
 
 	</section>
 
@@ -90,7 +104,7 @@
 				<li class="itemRed colorGray"><img src="../assets/img/icons/fbicon.svg" alt="Logo FB"><a href="https://www.facebook.com/8cho-Senpai-779330635523378/" target="_blank">Facebook</a></li>
 				<li class="itemRed colorGray"><img src="../assets/img/icons/twicon.svg" alt="Logo TW"><a href="https://twitter.com/8chooficial?lang=es" target="_blank">Twitter</a></li>
 				<li class="itemRed colorGray"><img src="../assets/img/icons/scicon.svg" alt="Logo SC"><a href="https://soundcloud.com/ochoalg" target="_blank">Soundcloud</a></li>
-				<li class="itemRed colorGray"><img src="../assets/img/icons/oficon.svg" alt="Logo OF"><a href="https://www.tvynovelas.com/__export/1622136827558/sites/tvynovelas/img/historico/2021/03/nino-oxxo-viral.jpg_423682103.jpg" id="easterEgg" target="_blank">Onlyfans</a></li>
+				<li class="itemRed colorGray"><img src="../assets/img/icons/oficon.svg" alt="Logo OF"><a  id="easterEgg" href="https://www.tvynovelas.com/__export/1622136827558/sites/tvynovelas/img/historico/2021/03/nino-oxxo-viral.jpg_423682103.jpg" target="_blank">Onlyfans</a></li>
 			</ul>
 
 			<!-- informacion del diseño -->
@@ -111,6 +125,6 @@
 			</p>	
 		</div>
 	</footer>
-
+    <script src="../js/main.js"></script>
 </body>
 </html>

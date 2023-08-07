@@ -668,6 +668,56 @@ table {
     }
 }
 
+.relItem2 {
+    position: relative;
+    top: 100px;
+    max-width: 260px;
+    height: 0;
+    padding-bottom: 100%;
+    width: fit-content;
+    color: #00000000;
+    transition: 0.4s;
+    margin-bottom: 200px;
+    background-color: $black;
+    h2 {
+        position: absolute;
+        top: 180px;
+    }
+    h3 {
+        position: absolute;
+        top: 310px;
+        font-size: 1.5rem;
+    }
+    a {
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        max-width: 100%;
+        transition: 0.4s;
+    }
+    p {
+        font-family: 'Raleway','sans serif';
+        font-weight: 800;
+        font-size: 2rem;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .relItem2:hover {
+        color: $white;
+        img {
+            opacity: 0.3;
+            filter: grayscale(40%);
+        }
+    }
+}
+
 @media (hover: hover) and (pointer: fine) {
     .relItem:hover {
         color: $white;
